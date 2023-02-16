@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#1A1A1A, #163562);
+    height: 100vh;
+}
+
+.main {
+    background: linear-gradient(#333336, #333336);
+    width: 600px;
+    max-height: 800px;
+    margin-top: 35px;
+    border-radius: 20px;
+    color: azure;
+}
+
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search {
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 50px 0 20px;
+    border: none;
+    background-color: #545252;
+    color: #FFF;
+}
+
+.btn-search {
+    background-color: #1A385B;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.img-wrapper img {
+    display: block;
+    margin: 0 auto;
+}
+
+.city-name {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 65px;
+}
+
+.temp-info h1 {
+    text-align: center;
+}
+
+.additional-weather-info {
+    text-align: center;
+    font-size: 20px;
+}
+
+.weekly-weather {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.weekly {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+input:focus {
+    outline: none;
+    background-color: #545252;
+}
+
+.loading {
+    width: 1.5em;
+    height: 1.5em;
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+    border-radius: 50%;
+    box-shadow:
+                0 -3em rgba(255, 255, 255, 1),
+                2.25em -2.25em rgba(255, 255, 255, 0.875),
+                3em 0 rgba(255, 255, 255, 0.75),
+                2.25em 2.25em rgba(255, 255, 255, 0.625),
+                0 3em rgba(255, 255, 255, 0.5),
+                -2.25em 2.25em rgba(255, 255, 255, 0.375),
+                -3em 0 rgba(255, 255, 255, 0.25),
+                -2.25em -2.25em rgba(255, 255, 255, 0.125);
+    animation: spin 1.2s linear infinite;
+    margin-top: 80px;
+}
+
+@keyframes spin {
+    100% {transform: rotate(-360deg)}
+}
+
+.hide {
+    display: none;
+}

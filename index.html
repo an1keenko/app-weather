@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://icons.iconarchive.com/icons/icons8/windows-8/128/Weather-Partly-Cloudy-Day-icon.png"/>
+</head>
+<body>
+<div>
+
+    <div class="main">
+        <div class="search-wrapper">
+            <input type="text" id="city" class="search" placeholder="Search your city...">
+            <button class="btn-search" id="search">Search</button>
+        </div>
+
+        <div class="loading hide" id="loading"></div>
+
+        <div class="wrapper" id="wrapper">
+            <div class="weather-info">
+                <div class="city-name" id="name"></div>
+                <div class="img-wrapper hide">
+                    <img id="img" alt="Weather" />
+                </div>
+
+                <div class="temp-info">
+                    <h1 id="temp"></h1>
+                </div>
+
+            </div>
+
+            <div class="additional-weather-info">
+                <div class="row">
+                    <div id="feel"></div>
+                    <div id="max"></div>
+                    <div id="min"></div>
+                    <div id="visibility"></div>
+                    <div id="wind"></div>
+                </div>
+            </div>
+
+            <div class="weekly-weather">
+                <div class="weekly" id="weekly"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./js/main.js" type="module"></script>
+</body>
+</html>
